@@ -1,0 +1,2 @@
+test,chi2,dof,p_value,caveat
+Chi-square: product vs timely response (responded complaints only),414.3,8,1.66e-84,"Large sample, so small differences can be significant; read the rates, not only p."

@@ -1,0 +1,6 @@
+measure,value
+Forwarded to company on same day (%),79.39
+Median forwarding lag (days),0.0
+90th percentile forwarding lag (days),2.0
+Maximum forwarding lag (days),275.0
+Complaints forwarded more than 30 days later,435.0

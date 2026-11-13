@@ -1,0 +1,17 @@
+dimension,value,spike_count,spike_share_pct,other_months_share_pct,other_months_avg_count_per_month,excess_count_vs_avg
+product_short,Checking / savings,883.0,50.49,39.38,319.1,564.0
+product_short,Credit card / prepaid,483.0,27.62,25.86,209.5,274.0
+product_short,Credit reporting,182.0,10.41,12.39,100.4,82.0
+product_short,Money transfer,77.0,4.4,5.56,45.0,32.0
+product_short,Vehicle loan / lease,18.0,1.03,1.01,8.2,10.0
+product_short,Debt collection,41.0,2.34,4.43,35.9,5.0
+product_short,Payday / personal loan,5.0,0.29,0.54,4.4,1.0
+product_short,Student loan,0.0,0.0,0.06,0.5,-0.0
+issue,Managing an account,425.0,24.3,24.16,195.8,229.0
+issue,Opening an account,183.0,10.46,4.18,33.9,149.0
+issue,Problem with a lender or other company charging your account,110.0,6.29,3.92,31.8,78.0
+issue,"Other features, terms, or problems",82.0,4.69,2.55,20.7,61.0
+issue,Problem caused by your funds being low,77.0,4.4,2.06,16.7,60.0
+issue,Fees or interest,71.0,4.06,2.22,18.0,53.0
+issue,Closing an account,83.0,4.75,4.72,38.3,45.0
+issue,Improper use of your report,64.0,3.66,2.57,20.8,43.0

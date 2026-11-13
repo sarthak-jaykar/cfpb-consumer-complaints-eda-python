@@ -1,0 +1,8 @@
+year,is_partial_year,complaints,note
+2017,FALSE,5394,full year
+2018,FALSE,7872,full year
+2019,FALSE,7075,full year
+2020,FALSE,8942,full year
+2021,FALSE,11149,full year
+2022,FALSE,12953,full year
+2023,TRUE,9131,Jan to Aug only
