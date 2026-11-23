@@ -1,0 +1,43 @@
+HOW TO RUN: Bank of America Consumer Complaints Analysis (CFPB), 2017–2023
+Tools: Python 3.10 or later, VS Code (Windows). Time: about 20 to 30 minutes.
+
+1. SET UP PYTHON
+   Open the project folder in VS Code. Open a terminal (Ctrl+`) and run:
+      python -m venv .venv
+      .venv\Scripts\activate
+      pip install -r requirements.txt
+   The .venv folder is created on your own machine. Do not add it to the repository.
+
+2. DATA FILE (place in the data/ folder of this project)
+The original dataset is included in `data/consumer_complaints.xlsx`. No separate download is required for this repository copy. The pipeline reads the source file from `data/`.
+
+   Original file name                    Name to use                 Expected rows
+   Consumer_Complaints.xlsx (sheet Data) consumer_complaints.xlsx    62,516
+
+3. RUN THE PIPELINE
+   python script\run_all.py
+
+Reading the workbook takes 10 to 30 seconds. The run has five steps:
+   01_ingest.py    profiles the workbook and prints the profile to the console
+   02_clean.py     cleans, derives forwarding lag, and prints the checks to the console
+   03_features.py  adds year, product labels, timeliness and relief flags
+   04_analysis.py  writes the answers to Q1 to Q7 into results\ (Q6 is counts only)
+   05_charts.py    writes the charts into screenshots\
+
+The cleaned intermediate file is written to your system temp folder, not to the project.
+
+4. CHECK THE CONSOLE OUTPUT
+   - Rows: 62,516
+   - Timely response blank: 1,494 (matches the In progress count)
+   - Forwarded on the same day: 79.39%
+   - Negative forwarding lag: 0
+
+Then compare results\q4_timeliness_overall.csv: 61,022 responded; timely rate 96.06%.
+Then compare results\q1_volume_by_year.csv: 2018 7,872; 2022 12,953; 2023 9,131 (January to August).
+
+5. QUESTION 6 IS NOT RUN
+Complaints per capita by state needs population data, which is not in this dataset. results\q6_states_counts_only.csv gives counts and shares only.
+
+6. COMMON PROBLEMS
+- "No module named openpyxl": run pip install -r requirements.txt with the virtual environment active.
+- "File not found: consumer_complaints.xlsx": the file is not in data\ or is named differently.
