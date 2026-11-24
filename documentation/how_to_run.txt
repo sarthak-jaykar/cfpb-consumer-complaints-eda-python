@@ -8,11 +8,11 @@ Tools: Python 3.10 or later, VS Code (Windows). Time: about 20 to 30 minutes.
       pip install -r requirements.txt
    The .venv folder is created on your own machine. Do not add it to the repository.
 
-2. DATA FILE (place in the data/ folder of this project)
-The original dataset is included in `data/consumer_complaints.xlsx`. No separate download is required for this repository copy. The pipeline reads the source file from `data/`.
+2. DATA FILE
+The source workbook is already included at `data/consumer_complaints.xlsx` (sheet: `Data`). No download, rename or replacement is required.
 
-   Original file name                    Name to use                 Expected rows
-   Consumer_Complaints.xlsx (sheet Data) consumer_complaints.xlsx    62,516
+   Included file                 Expected rows
+   consumer_complaints.xlsx      62,516
 
 3. RUN THE PIPELINE
    python script\run_all.py
