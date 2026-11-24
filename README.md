@@ -139,7 +139,7 @@ cfpb-consumer-complaints-python/
 pip install -r requirements.txt
 ```
 
-1. Place `Consumer_Complaints.xlsx` in `data/` and rename it to `consumer_complaints.xlsx`.
+1. The source workbook is already included at `data/consumer_complaints.xlsx`; no download or rename is needed.
 2. Run the full pipeline:
 
 ```bash
